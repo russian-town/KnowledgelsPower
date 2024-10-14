@@ -1,6 +1,7 @@
 using System;
 using CodeBase.CameraLogic;
 using CodeBase.Infrastructure;
+using CodeBase.Infrastructure.Services;
 using CodeBase.Services.Input;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
@@ -17,15 +18,10 @@ namespace CodeBase.Hero
 
         private void Awake()
         {
-            _inputService = Game.InputService;
-        }
-
-        private void Start()
-        {
+            _inputService = AllServices.Container.Single<IInputService>();
             _camera = Camera.main;
-            CameraFollow();
         }
-
+        
         private void Update()
         {
             Vector3 movementVector = Vector3.zero;
@@ -43,8 +39,5 @@ namespace CodeBase.Hero
 
             CharacterController.Move(MovementSpeed * movementVector * Time.deltaTime);
         }
-
-        private void CameraFollow() => 
-            _camera.GetComponent<CameraFollow>().Follow(gameObject);
     }
 }
