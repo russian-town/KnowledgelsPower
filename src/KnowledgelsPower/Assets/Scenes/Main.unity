@@ -682,6 +682,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7898130537326114429, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5949639096180990929, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.42482758
