@@ -686,9 +686,13 @@ PrefabInstance:
       propertyPath: m_StoppingDistance
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -5584479014740946545, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
+      propertyPath: Damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5949639096180990929, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.42482758
+      value: -13.33
       objectReference: {fileID: 0}
     - target: {fileID: 5949639096180990929, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -696,7 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5949639096180990929, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.352299
+      value: -6.83
       objectReference: {fileID: 0}
     - target: {fileID: 5949639096180990929, guid: b36a5c4d58e9c3e4bb37492a1e1a051c, type: 3}
       propertyPath: m_LocalRotation.w
