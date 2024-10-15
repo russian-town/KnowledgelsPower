@@ -1,4 +1,5 @@
 ﻿using CodeBase.CameraLogic;
+using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.Logic;
 using UnityEngine;
