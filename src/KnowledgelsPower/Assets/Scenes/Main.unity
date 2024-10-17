@@ -36480,17 +36480,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7116484412700640688, guid: b48bc380df1f6dd4a94a71ae36d95a09, type: 3}
+      propertyPath: MonsterTypeId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7956257656189603643, guid: b48bc380df1f6dd4a94a71ae36d95a09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.6
+      value: -13.65
       objectReference: {fileID: 0}
     - target: {fileID: 7956257656189603643, guid: b48bc380df1f6dd4a94a71ae36d95a09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 7956257656189603643, guid: b48bc380df1f6dd4a94a71ae36d95a09, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.75
+      value: -7.81
       objectReference: {fileID: 0}
     - target: {fileID: 7956257656189603643, guid: b48bc380df1f6dd4a94a71ae36d95a09, type: 3}
       propertyPath: m_LocalRotation.w
