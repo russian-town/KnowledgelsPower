@@ -7,7 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/Mini Legion Rock Golem PBR HP Polyart/Materials/PolyartStandard.mat
   m_Name: PolyartStandard
+========
+  m_Name: Polyart
+>>>>>>>> dev:src/KnowledgelsPower/Assets/Mini Legion Lich PBR HP Polyart/Materials/Polyart.mat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,7 +48,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/Mini Legion Rock Golem PBR HP Polyart/Materials/PolyartStandard.mat
         m_Texture: {fileID: 2800000, guid: 15b0ee25e3ee5d6479de36fa2862d895, type: 3}
+========
+        m_Texture: {fileID: 2800000, guid: 0a287144553b8e9409d70a8a9c1d4ebf, type: 3}
+>>>>>>>> dev:src/KnowledgelsPower/Assets/Mini Legion Lich PBR HP Polyart/Materials/Polyart.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

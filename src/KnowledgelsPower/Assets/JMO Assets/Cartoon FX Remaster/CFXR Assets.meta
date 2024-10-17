@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets.meta
 guid: bd9d1d014bf0b14428db03b2527d2d93
+========
+guid: b56551e9e3ab84e4180b7b30c06ff232
+>>>>>>>> dev:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

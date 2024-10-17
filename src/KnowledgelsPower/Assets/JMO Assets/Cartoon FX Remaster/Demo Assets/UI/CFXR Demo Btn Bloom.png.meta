@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Bloom.png.meta
 guid: 07caf3d1930bab14aa8f6dcdf2db871a
+========
+guid: 32700198561e47044863cf80370fe63a
+>>>>>>>> dev:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Bloom H.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,7 +117,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Bloom.png.meta
     spriteID: f471e31487bcd2b4e8a415eea9556ebc
+========
+    spriteID: a510e8f233c63a3458d3449844071aad
+>>>>>>>> dev:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Bloom H.png.meta
     internalID: 0
     vertices: []
     indices: 

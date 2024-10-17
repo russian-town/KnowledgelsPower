@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes.meta
 guid: 869785f887ca9d74f972d5727c91e1c8
+========
+guid: bd9d1d014bf0b14428db03b2527d2d93
+>>>>>>>> dev:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

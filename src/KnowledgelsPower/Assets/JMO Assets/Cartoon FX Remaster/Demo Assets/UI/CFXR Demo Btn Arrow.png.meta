@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Arrow.png.meta
 guid: b0394665e16ef504bb922274dd606020
+========
+guid: 70ce7a5ab5ec0a54e8289848c8f16534
+>>>>>>>> dev:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Arrow R.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,7 +117,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<<< HEAD:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Arrow.png.meta
     spriteID: bbd59548616e8af469272e570f0e8d19
+========
+    spriteID: a663febafc8c5aa47be7aa470979e048
+>>>>>>>> dev:src/KnowledgelsPower/Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/UI/CFXR Demo Btn Arrow R.png.meta
     internalID: 0
     vertices: []
     indices: 
