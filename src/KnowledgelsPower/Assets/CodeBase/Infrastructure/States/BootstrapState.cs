@@ -35,10 +35,10 @@ namespace CodeBase.Infrastructure.States
         private void RegisterServices()
         {
             RegisterStaticData();
-            _services.RegisterSingle(InputService());
             _services.RegisterSingle<IAssets>(new AssetProvider());
             IRandomService randomService = new RandomService();
             IPersistentProgressService progressService = new PersistentProgressService();
+            _services.RegisterSingle(InputService());
             _services.RegisterSingle(randomService);
             _services.RegisterSingle(progressService);
             _services.RegisterSingle<IGameFactory>(new GameFactory(_services.Single<IAssets>(), _services.Single<IStaticDataService>(), randomService, progressService));
@@ -48,7 +48,7 @@ namespace CodeBase.Infrastructure.States
         private void RegisterStaticData()
         {
             IStaticDataService staticData = new StaticDataService();
-            staticData.LoadMonsters();
+            staticData.Load();
             _services.RegisterSingle(staticData);
         }
 

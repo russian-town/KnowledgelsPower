@@ -7,18 +7,29 @@ namespace CodeBase.Services
 {
     public class StaticDataService : IStaticDataService
     {
-        private Dictionary<MonsterTypeId,MonsterStaticData> _monsters;
+        private Dictionary<MonsterTypeId, MonsterStaticData> _monsters;
+        private Dictionary<string, LevelStaticData> _levels;
 
-        public void LoadMonsters()
+        public void Load()
         {
             _monsters = Resources
                 .LoadAll<MonsterStaticData>("StaticData/Monster")
                 .ToDictionary(x => x.MonsterTypeId, x => x);
+
+            _levels = Resources
+                .LoadAll<LevelStaticData>("StaticData/Levels")
+                .ToDictionary(x => x.LevelKey, x => x);
         }
 
-        public MonsterStaticData ForMonster(MonsterTypeId typeId) => 
+        public MonsterStaticData ForMonster(MonsterTypeId typeId) =>
             _monsters.TryGetValue(typeId, out MonsterStaticData staticData)
-                ? staticData 
+                ? staticData
                 : null;
+
+        public LevelStaticData ForLevel(string sceneKey) =>
+            _levels.TryGetValue(sceneKey, out LevelStaticData staticData)
+                ? staticData
+                : null;
+
     }
 }

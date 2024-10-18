@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEngine;
 
 namespace CodeBase.Data
 {
@@ -12,6 +11,7 @@ namespace CodeBase.Data
         public WorldData(string initialLevel)
         {
             PositionOnLevel = new PositionOnLevel(initialLevel);
+            LootData = new LootData();
         }
     }
 }
