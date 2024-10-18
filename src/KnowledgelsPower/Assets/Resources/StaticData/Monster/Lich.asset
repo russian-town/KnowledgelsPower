@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Lich
   m_EditorClassIdentifier: 
   MonsterTypeId: 1
+  MinLoot: 1
+  MaxLoot: 7
   HP: 4
   Damage: 1
   EffectiveDistance: 1

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Golem
   m_EditorClassIdentifier: 
   MonsterTypeId: 2
+  MinLoot: 1
+  MaxLoot: 7
   HP: 8
   Damage: 20
   EffectiveDistance: 1

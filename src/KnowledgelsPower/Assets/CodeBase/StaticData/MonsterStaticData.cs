@@ -7,6 +7,9 @@ namespace CodeBase.StaticData
     {
         public MonsterTypeId MonsterTypeId;
 
+        public int MinLoot;
+        public int MaxLoot;
+        
         [Range(1, 100)] public int HP;
         [Range(1f, 30f)] public float Damage;
         [Range(.5f, 1f)] public float EffectiveDistance = 1f;
