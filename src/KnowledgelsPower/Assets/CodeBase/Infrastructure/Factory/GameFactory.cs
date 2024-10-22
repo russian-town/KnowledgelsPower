@@ -38,9 +38,9 @@ namespace CodeBase.Infrastructure.Factory
             _windowService = windowService;
         }
 
-        public GameObject CreateHero(GameObject at)
+        public GameObject CreateHero(Vector3 at)
         {
-            _heroGameObject = InstantiateRegistered(AssetPath.HeroPath, at.transform.position);
+            _heroGameObject = InstantiateRegistered(AssetPath.HeroPath, at);
             return _heroGameObject;
         }
 
