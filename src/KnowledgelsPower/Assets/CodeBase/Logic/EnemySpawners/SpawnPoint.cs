@@ -36,9 +36,9 @@ namespace CodeBase.Logic.EnemySpawners
                 progress.KillData.CrearedSpawners.Add(Id);
         }
 
-        private void Spawn()
+        private async void Spawn()
         {
-            var monster = _factory.CreateMonster(MonsterTypeId, transform);
+            var monster = await _factory.CreateMonster(MonsterTypeId, transform);
             _enemyDeath = monster.GetComponent<EnemyDeath>();
             _enemyDeath.Happened += OnHappened;
         }

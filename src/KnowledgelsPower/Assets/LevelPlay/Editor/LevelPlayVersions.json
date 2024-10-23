@@ -119,6 +119,17 @@
             "dependencyXmlURL": "https://s3.amazonaws.com/ssa.public/Dependencies-xmls/Bigo/${VERSION}/ISBigoAdapterDependencies.xml",
             "dependencyXmlFileName": "ISBigoAdapterDependencies.xml",
             "versions": {
+                "4.3.4.0": {
+                  "ironSourceSdkVersion": "[8.4.0, 9.0[",
+                  "android": {
+                    "adapterVersion": "4.3.3",
+                    "adNetworkVersion": "5.0.2"
+                  },
+                  "ios": {
+                    "adapterVersion": "4.3.2.0",
+                    "adNetworkVersion": "4.5.1"
+                  }
+                },
                 "4.3.3.0": {
                     "ironSourceSdkVersion": "[8.4.0, 9.0[",
                     "android": {
@@ -597,6 +608,17 @@
             "dependencyXmlURL": "https://s3.amazonaws.com/ssa.public/Dependencies-xmls/Smaato/${VERSION}/ISSmaatoAdapterDependencies.xml",
             "dependencyXmlFileName": "ISSmaatoAdapterDependencies.xml",
             "versions": {
+                "4.3.15.0": {
+                  "ironSourceSdkVersion": "[8.4.0, 9.0[",
+                  "android": {
+                    "adapterVersion": "4.3.12",
+                    "adNetworkVersion": "22.7.1"
+                  },
+                  "ios": {
+                    "adapterVersion": "4.3.15.0",
+                    "adNetworkVersion": "22.9.1"
+                  }
+                },
                 "4.3.14.1": {
                     "ironSourceSdkVersion": "[8.4.0, 9.0[",
                     "android": {

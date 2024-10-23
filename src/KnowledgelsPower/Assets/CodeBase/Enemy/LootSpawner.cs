@@ -1,7 +1,6 @@
 ﻿using CodeBase.Data;
 using CodeBase.Infrastructure.Factory;
 using CodeBase.Services;
-using TMPro;
 using UnityEngine;
 
 namespace CodeBase.Enemy
@@ -30,10 +29,10 @@ namespace CodeBase.Enemy
             _lootMax = max;
         }
         
-        private void SpawnLoot()
+        private async void SpawnLoot()
         {
             EnemyDeath.Happened -= SpawnLoot;
-            var loot = _factory.CreateLoot();
+            var loot = await _factory.CreateLoot();
             loot.transform.position = transform.position;
             var lootItem = GenerateLoot();
             loot.Initialize(lootItem);

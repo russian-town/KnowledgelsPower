@@ -14,15 +14,13 @@ namespace CodeBase.UI.Elements
         {
             _worldData = worldData;
             _worldData.LootData.Changed += UpdateCounter;
+            UpdateCounter();
         }
 
-        private void Start() => 
-            UpdateCounter();
-
-        private void OnDisable() => 
+        private void OnDisable() =>
             _worldData.LootData.Changed -= UpdateCounter;
 
-        private void UpdateCounter() => 
+        private void UpdateCounter() =>
             Counter.text = $"{_worldData.LootData.Collected}";
     }
 }

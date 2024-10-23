@@ -21,4 +21,8 @@ MonoBehaviour:
   Cleavage: 0.5
   MoveSpeed: 3
   AttackCooldown: 3
-  Prefab: {fileID: 4442013861256509210, guid: ffed0e29c2bd42e4794786f2a47b6506, type: 3}
+  PrefabReference:
+    m_AssetGUID: ffed0e29c2bd42e4794786f2a47b6506
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
