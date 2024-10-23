@@ -3,7 +3,7 @@ using CodeBase.Infrastructure.Services.PersistentProgress;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CodeBase.UI.Windows
+namespace CodeBase.UI.Windows.Shop
 {
     public class RewardedAdItem : MonoBehaviour
     {
