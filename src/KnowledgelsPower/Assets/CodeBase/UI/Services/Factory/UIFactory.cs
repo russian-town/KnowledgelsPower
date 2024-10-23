@@ -1,21 +1,25 @@
-﻿using CodeBase.Infrastructure.AssetManagement;
+﻿using System.Threading.Tasks;
+using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Services.Ads;
+using CodeBase.Infrastructure.Services.IAP;
 using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.Services;
 using CodeBase.UI.Services.Windows;
 using CodeBase.UI.Windows;
+using CodeBase.UI.Windows.Shop;
 using UnityEngine;
 
 namespace CodeBase.UI.Services.Factory
 {
     public class UIFactory : IUIFactory
     {
-        private const string UIRootPath = "UI/UIRoot";
+        private const string UIRootPath = "UIRoot";
 
         private readonly IAssets _assets;
         private readonly IStaticDataService _staticData;
         private readonly IPersistentProgressService _progressService;
         private readonly IAdsService _adsService;
+        private readonly IIAPService _iapService;
 
         private Transform _uiRoot;
 
@@ -23,22 +27,27 @@ namespace CodeBase.UI.Services.Factory
             IAssets assets,
             IStaticDataService staticData,
             IPersistentProgressService progressService,
-            IAdsService adsService)
+            IAdsService adsService,
+            IIAPService iapService)
         {
             _assets = assets;
             _staticData = staticData;
             _progressService = progressService;
             _adsService = adsService;
+            _iapService = iapService;
         }
 
         public void CreateShop()
         {
             var config = _staticData.ForWindow(WindowId.Shop);
             var window = Object.Instantiate(config.Prefab, _uiRoot) as ShopWindow;
-            window.Construct(_adsService, _progressService);
+            window.Construct(_adsService, _progressService, _iapService, _assets);
         }
 
-        public void CreateUIRoot() =>
-            _uiRoot = _assets.Instantiate(UIRootPath).transform;
+        public async Task CreateUIRoot()
+        {
+            var root = await _assets.Instantiate(UIRootPath);
+            _uiRoot =  root.transform;
+        }
     }
 }

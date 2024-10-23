@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace CodeBase.StaticData
 {
@@ -17,6 +18,6 @@ namespace CodeBase.StaticData
         [Range(2f, 8f)] public float MoveSpeed = 3f;
         [Range(.5f, 4f)] public float AttackCooldown = 3f;
 
-        public GameObject Prefab;
+        public AssetReferenceGameObject PrefabReference;
     }
 }
